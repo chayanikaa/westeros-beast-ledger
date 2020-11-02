@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Drogon",
+    "image": "/data/assets/drogon.png",
+    "description": "Drogon is one of the three dragons born in the wastelands beyond Lhazar, along with his brothers Rhaegal and Viserion. He is named after Daenerys's late husband Khal Drogo. He can be distinguished by his black and red colored scales, and red-black wings. He was also Daenerys's personal mount. With the deaths of Viserion and Rhaegal, Drogon is currently the last of his brothers, hence the only known living dragon in existence.",
+    "species": "dragon"
+  },
+  {
+    "id": 2,
+    "name": "Ghost",
+    "image": "/data/assets/ghost.jpg",
+    "description": "The Dire wolf Ghost belongs to he who does not know.",
+    "species": "direwolf"
+  },
+  {
+    "id": 3,
+    "name": "Nymeria",
+    "species": "direwolf",
+    "description": "Nymeria is Arya Stark's dire wolf.",
+    "image": "data/assets/1604179631062-nymeria.jpg"
+  }
+]

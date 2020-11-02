@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'got';
+  src: url('/fonts/got.ttf');
+}
+
+:root {
+  --header-bg-image: url("/images/westeros.jpg");
+  --header-bg-color:#4B4954;
+  --main-bg-color:#4B4954;
+  --main-font-color: #eeeede;
+  --sec-font-color:  #ffe7b3;
+  --other-color: #AD8843;
+  --other-color-2: #798585;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+}
+
+body, main {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 19px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+/****************
+  Header
+*****************/
+
+header {
+  width: 100%;
+  font-family: "got", Helvetica, Arial, sans-serif;
+  color: var(--main-font-color);
+  background-color: var(--header-bg-color);
+  text-shadow: 3px 3px 4px #000000;
+  height: 400px;
+  overflow: hidden;
+}
+
+.header-image {
+  background-image: var(--header-bg-image);
+  background-position: center;
+  height: 410px;
+  width: 100%;
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.logo-container {
+  z-index: 100;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+}
+
+header img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+
+/****************
+  TopNav
+*****************/
+
+.topnav {
+  padding-top: 120px;
+  border-top: 1px var(--main-font-color) solid;
+}
+
+.topnav a {
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px #000000;
+  color: var(--main-font-color);
+}
+
+.topnav a:hover, .topnav a.active {
+  border-bottom: 1px var(--main-font-color) solid;
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 32px;
+  width: 100%;
+}
+
+.intro {
+  margin: 40px;
+  color: var(--sec-font-color);
+}
+
+/****************
+  Gallery
+*****************/
+
+.image-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  
+}
+
+.grid-image-wrapper {
+  padding: 2%;
+}
+
+.grid-image {
+  width: 96%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-image .description {
+  /* visibility: hidden; */
+  background-color: rgba(0,0,0,0);
+  color: var(--main-font-color);
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  transition: all 1s;
+  opacity: 0;
+  overflow-y: scroll;
+}
+
+.grid-image:hover .description {
+  background-color: rgba(0,0,0,0.5);
+  visibility: visible;
+  transition: all 1s;
+  opacity: 1;
+}
+
+/****************
+  Form
+*****************/
+
+form {
+  width: 600px;
+}
+
+.field {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+  color: var(--sec-font-color);
+}
+
+input, select, textarea {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+select {
+  font-size: 20px;
+}
+
+input[type="text"], input[type="number"], select, textarea {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid var(--sec-font-color);
+  color: var(--sec-font-color);
+  font-family: cursive;
+}
+
+textarea {
+  background: rgba(0,0,0,0.2);
+}

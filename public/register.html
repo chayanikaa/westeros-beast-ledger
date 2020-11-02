@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <!-- <script type="module" src="/js/renderAllAnimals.js"></script> -->
+  <header>
+    <div class="header-image"></div>
+    <div class="logo-container">
+      <img src="/images/logo.png"/>
+      <h1>Westeros Beast Ledger</h1>
+      <nav class="topnav">
+        <a href="/">Home</a>
+        <a class="active" href="/register.html">Register a Beast</a>
+        <a href="/dragons.html">Dragons</a>
+        <a href="/dire-wolves.html">Dire Wolves</a>
+        
+    </nav>
+    </div>
+  </header>
+  <main>
+    <h3 class="intro">Record a beast in this ledger.</h3>
+    <form action="/api/beasts" method="post" id="register-form">
+      <div class="field">
+        <label for="Name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Lady">
+      </div>
+      
+      <div class="field">
+        <label for="species">Species</label>
+        <select type="text" name="species" id="species" placeholder="Lady">
+          <option value="direwolf" selected>Dire Wolf</option>
+          <option value="dragon">Dragon</option>
+          <option value="cat">Cat</option>
+          <option value="dog">Dog</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="Description">Description</label>
+        <textarea type="text" name="description" id="description" placeholder="Lady" form="register-form"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="Image">Image</label>
+        <input type="file" name="image" id="image">
+      </div>
+      <input type="submit"></input>
+    </form>
+  </main>
+</body>
+
+</html>
